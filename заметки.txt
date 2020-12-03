@@ -1,0 +1,57 @@
+https://docs.npmjs.com/cli/v6/configuring-npm/package-json#files
+You can also provide a .npmignore file
+
+npm version 1.0.9
+
+npm publish --access public
+
+npm unpublish --force  @ulibka68/react-library-example
+
+  "storybook-install": "npx -p @storybook/cli sb init"
+
+@svgr/rollup:
+  Transform SVGs into React components.
+
+awesome-typescript-loader
+   TypeScript loader for Webpack
+   Please note that ATL works the same way as a TypeScript compiler as much as possible.
+
+++
+eslint-plugin-jsx-a11y
+   Static AST checker for accessibility rules on JSX elements.
+Then configure the rules you want to use under the rules section.
+
+{
+  "rules": {
+    "jsx-a11y/rule-name": 2
+  }
+}
+
+
+webpack-blocks
+   It wraps all the most commonly used blocks,
+
+cssnano
+   css min
+
+https://github.com/webpack-contrib/terser-webpack-plugin
+    minify your JavaScript.
+
+++
+"eslint-plugin-flowtype": "5.2.0",
+ok
+
+
+
+"rollup-plugin-peer-deps-external": "^2.2.4",
+    we generally want to keep from including peerDependencies since they are expected to be provided by the consumer of the library. By excluding these dependencies, we keep bundle size down and avoid bundling duplicate dependencies.
+
+"rollup-plugin-postcss": "^3.1.8",
+
+
+https://github.com/rollup/plugins
+   The one-stop shop for official Rollup plugins
+   npm install @rollup/plugin-commonjs --save-dev
+   npm install @rollup/plugin-node-resolve --save-dev
+   npm install @rollup/plugin-typescript --save-dev
+   npm install @rollup/plugin-url --save-dev

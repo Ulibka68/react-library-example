@@ -1,0 +1,26 @@
+import React from "react";
+import { storiesOf } from "@storybook/react";
+import { ExampleComponent } from "./ExampleComponent";
+
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+import { text } from "@storybook/addon-knobs";
+
+const stories = storiesOf("ExampleComponent", module);
+
+stories.add("ExampleComponent", () => <ExampleComponent text={text("text", "Some text")} />, {
+   info: { inline: true },
+   text: `
+
+  ### Notes
+
+  Simple example component
+
+  ### Usage
+  ~~~js
+  <ExampleComponent
+    text="Some text"
+  />
+  ~~~
+
+`,
+});

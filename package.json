@@ -1,0 +1,69 @@
+{
+  "name": "@ulibka68/react-library-example",
+  "version": "1.0.11",
+  "description": "Simple example of react library",
+  "author": "Ulibka68",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Ulibka68/react-library-example"
+  },
+  "main": "dist/index.js",
+  "typings": "dist/index",
+  "module": "dist/index.es.js",
+  "jsnext:main": "dist/index.es.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "lint": "eslint src/**/* --ext .ts,.tsx --fix",
+    "build": "rollup -c",
+    "publish": "npm publish --access public",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
+  },
+  "dependencies": {},
+  "peerDependencies": {
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.9",
+    "@rollup/plugin-babel": "^5.2.2",
+    "@rollup/plugin-commonjs": "^17.0.0",
+    "@rollup/plugin-node-resolve": "^11.0.0",
+    "@rollup/plugin-typescript": "^8.0.0",
+    "@rollup/plugin-url": "^6.0.0",
+    "@storybook/addon-actions": "^6.1.9",
+    "@storybook/addon-essentials": "^6.1.9",
+    "@storybook/addon-knobs": "^6.1.9",
+    "@storybook/addon-links": "^6.1.9",
+    "@storybook/preset-typescript": "^3.0.0",
+    "@storybook/react": "^6.1.9",
+    "@svgr/rollup": "^5.5.0",
+    "@types/react": "^17.0.0",
+    "@types/react-dom": "^17.0.0",
+    "@typescript-eslint/eslint-plugin": "4.9.0",
+    "@typescript-eslint/parser": "4.9.0",
+    "babel-eslint": "10.1.0",
+    "babel-loader": "^8.2.2",
+    "eslint": "^7.14.0",
+    "eslint-config-prettier": "6.15.0",
+    "eslint-config-react-app": "^6.0.0",
+    "eslint-loader": "2.1.2",
+    "eslint-plugin-import": "2.22.1",
+    "eslint-plugin-jsx-a11y": "6.4.1",
+    "eslint-plugin-prettier": "3.2.0",
+    "eslint-plugin-react": "7.21.5",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "prettier": "2.2.1",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "rollup": "^2.34.1",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-postcss": "^3.1.8",
+    "rollup-plugin-typescript2": "^0.29.0",
+    "ts-loader": "^8.0.11",
+    "typescript": "^4.1.2"
+  }
+}
